@@ -32,9 +32,13 @@ Sub ExportEverything()
     For Each ws In ActiveWorkbook.Worksheets
         If ws.Name <> out.Name Then
             Application.StatusBar = "Processing Sheet: " & ws.Name
-            Set usedRng = ws.UsedRange
+
+            Dim temp As Long
+            temp = ws.UsedRange.Rows.Count
             
-            If Not usedRng Is Nothing And WorksheetFunction.CountA(usedRng) > 0 Then
+            Set usedRng = ws.UsedRange
+
+            If Not usedRng Is Nothing Then
                 ReDim data(1 To usedRng.Cells.Count, 1 To colCount)
                 rowOut = 1
                 
