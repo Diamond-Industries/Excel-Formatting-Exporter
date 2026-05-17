@@ -1,3 +1,6 @@
+' Excel Formatting Exporter - Copyright (c) 2026 DiamTek
+' Licensed under the MIT License. See the LICENSE file for details.
+
 Private Const COL_SHEET_NAME As Integer = 1
 Private Const COL_ADDRESS As Integer = 2
 Private Const COL_VALUE As Integer = 3

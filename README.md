@@ -32,3 +32,10 @@ const hexColor = rawColor.split(' | ')[1];     // "#C0A0C0"
 
 const rawHAlign = row['H-Align'];              // "-4108 | Center"
 const alignString = rawHAlign.split(' | ')[1]; // "Center"
+
+📄 License
+----------
+
+This tool is provided as open-source infrastructure under the **MIT License**.
+
+*Disclaimer: This project is an independent developer utility. Mentioned third-party open-source libraries (`exceljs`, `SheetJS`) and Microsoft Excel are properties of their respective owners and are subject to their own licensing terms.*
